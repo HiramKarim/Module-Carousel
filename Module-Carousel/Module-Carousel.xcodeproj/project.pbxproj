@@ -19,6 +19,9 @@
 		1FCE53C529EFAA4700FB9213 /* CarouselAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53C429EFAA4700FB9213 /* CarouselAppTests.swift */; };
 		1FCE53CF29EFAA4700FB9213 /* CarouselAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53CE29EFAA4700FB9213 /* CarouselAppUITests.swift */; };
 		1FCE53D129EFAA4700FB9213 /* CarouselAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53D029EFAA4700FB9213 /* CarouselAppUITestsLaunchTests.swift */; };
+		1FCE53DD29EFAE7300FB9213 /* CarouselVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53DC29EFAE7300FB9213 /* CarouselVC.swift */; };
+		1FCE53DF29EFAFF100FB9213 /* CarouselCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53DE29EFAFF100FB9213 /* CarouselCoordinator.swift */; };
+		1FCE53E229EFBE3300FB9213 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE53E129EFBE3300FB9213 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		1FCE53CA29EFAA4700FB9213 /* CarouselAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE53CE29EFAA4700FB9213 /* CarouselAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselAppUITests.swift; sourceTree = "<group>"; };
 		1FCE53D029EFAA4700FB9213 /* CarouselAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1FCE53DC29EFAE7300FB9213 /* CarouselVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselVC.swift; sourceTree = "<group>"; };
+		1FCE53DE29EFAFF100FB9213 /* CarouselCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCoordinator.swift; sourceTree = "<group>"; };
+		1FCE53E129EFBE3300FB9213 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +138,10 @@
 		1FCE539129EFA90000FB9213 /* Module-Carousel */ = {
 			isa = PBXGroup;
 			children = (
+				1FCE53E029EFBCDE00FB9213 /* Resources */,
 				1FCE539229EFA90000FB9213 /* Module_Carousel.h */,
+				1FCE53DC29EFAE7300FB9213 /* CarouselVC.swift */,
+				1FCE53DE29EFAFF100FB9213 /* CarouselCoordinator.swift */,
 			);
 			path = "Module-Carousel";
 			sourceTree = "<group>";
@@ -174,6 +183,14 @@
 				1FCE53D029EFAA4700FB9213 /* CarouselAppUITestsLaunchTests.swift */,
 			);
 			path = CarouselAppUITests;
+			sourceTree = "<group>";
+		};
+		1FCE53E029EFBCDE00FB9213 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE53E129EFBE3300FB9213 /* Media.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +308,7 @@
 				TargetAttributes = {
 					1FCE538E29EFA90000FB9213 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					1FCE539629EFA90100FB9213 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -335,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCE53E229EFBE3300FB9213 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +395,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCE53DF29EFAFF100FB9213 /* CarouselCoordinator.swift in Sources */,
+				1FCE53DD29EFAE7300FB9213 /* CarouselVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +598,7 @@
 		1FCE53A229EFA90100FB9213 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -597,6 +619,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,6 +628,7 @@
 		1FCE53A329EFA90100FB9213 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -633,6 +657,7 @@
 		1FCE53A529EFA90100FB9213 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SNTB2L8C6Q;
@@ -649,6 +674,7 @@
 		1FCE53A629EFA90100FB9213 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SNTB2L8C6Q;
