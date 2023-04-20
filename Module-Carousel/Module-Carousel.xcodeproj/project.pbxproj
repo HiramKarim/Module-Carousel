@@ -13,7 +13,6 @@
 		1FCE53AE29EFAA4600FB9213 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53AD29EFAA4600FB9213 /* AppDelegate.swift */; };
 		1FCE53B029EFAA4600FB9213 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53AF29EFAA4600FB9213 /* SceneDelegate.swift */; };
 		1FCE53B229EFAA4600FB9213 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53B129EFAA4600FB9213 /* ViewController.swift */; };
-		1FCE53B529EFAA4600FB9213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE53B329EFAA4600FB9213 /* Main.storyboard */; };
 		1FCE53B729EFAA4700FB9213 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE53B629EFAA4700FB9213 /* Assets.xcassets */; };
 		1FCE53BA29EFAA4700FB9213 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE53B829EFAA4700FB9213 /* LaunchScreen.storyboard */; };
 		1FCE53C529EFAA4700FB9213 /* CarouselAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53C429EFAA4700FB9213 /* CarouselAppTests.swift */; };
@@ -22,6 +21,9 @@
 		1FCE53DD29EFAE7300FB9213 /* CarouselVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53DC29EFAE7300FB9213 /* CarouselVC.swift */; };
 		1FCE53DF29EFAFF100FB9213 /* CarouselCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE53DE29EFAFF100FB9213 /* CarouselCoordinator.swift */; };
 		1FCE53E229EFBE3300FB9213 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE53E129EFBE3300FB9213 /* Media.xcassets */; };
+		1FD9828029F0F67100CD83CF /* Module_Carousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE538F29EFA90000FB9213 /* Module_Carousel.framework */; };
+		1FD9828129F0F67100CD83CF /* Module_Carousel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCE538F29EFA90000FB9213 /* Module_Carousel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FD9828729F104F500CD83CF /* UIColor+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD9828629F104F500CD83CF /* UIColor+Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,28 @@
 			remoteGlobalIDString = 1FCE53AA29EFAA4600FB9213;
 			remoteInfo = CarouselApp;
 		};
+		1FD9828229F0F67100CD83CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FCE538629EFA90000FB9213 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FCE538E29EFA90000FB9213;
+			remoteInfo = "Module-Carousel";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FD9828429F0F67100CD83CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FD9828129F0F67100CD83CF /* Module_Carousel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1FCE538F29EFA90000FB9213 /* Module_Carousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Module_Carousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +80,6 @@
 		1FCE53AD29EFAA4600FB9213 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FCE53AF29EFAA4600FB9213 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1FCE53B129EFAA4600FB9213 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1FCE53B429EFAA4600FB9213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FCE53B629EFAA4700FB9213 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FCE53B929EFAA4700FB9213 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FCE53BB29EFAA4700FB9213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +91,7 @@
 		1FCE53DC29EFAE7300FB9213 /* CarouselVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselVC.swift; sourceTree = "<group>"; };
 		1FCE53DE29EFAFF100FB9213 /* CarouselCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCoordinator.swift; sourceTree = "<group>"; };
 		1FCE53E129EFBE3300FB9213 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		1FD9828629F104F500CD83CF /* UIColor+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD9828029F0F67100CD83CF /* Module_Carousel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +144,7 @@
 				1FCE53C329EFAA4700FB9213 /* CarouselAppTests */,
 				1FCE53CD29EFAA4700FB9213 /* CarouselAppUITests */,
 				1FCE539029EFA90000FB9213 /* Products */,
+				1FD9827F29F0F67000CD83CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,7 +163,8 @@
 		1FCE539129EFA90000FB9213 /* Module-Carousel */ = {
 			isa = PBXGroup;
 			children = (
-				1FCE53E029EFBCDE00FB9213 /* Resources */,
+				1FCE53E129EFBE3300FB9213 /* Media.xcassets */,
+				1FD9828529F104DA00CD83CF /* Helpers */,
 				1FCE539229EFA90000FB9213 /* Module_Carousel.h */,
 				1FCE53DC29EFAE7300FB9213 /* CarouselVC.swift */,
 				1FCE53DE29EFAFF100FB9213 /* CarouselCoordinator.swift */,
@@ -160,7 +186,6 @@
 				1FCE53AD29EFAA4600FB9213 /* AppDelegate.swift */,
 				1FCE53AF29EFAA4600FB9213 /* SceneDelegate.swift */,
 				1FCE53B129EFAA4600FB9213 /* ViewController.swift */,
-				1FCE53B329EFAA4600FB9213 /* Main.storyboard */,
 				1FCE53B629EFAA4700FB9213 /* Assets.xcassets */,
 				1FCE53B829EFAA4700FB9213 /* LaunchScreen.storyboard */,
 				1FCE53BB29EFAA4700FB9213 /* Info.plist */,
@@ -185,12 +210,19 @@
 			path = CarouselAppUITests;
 			sourceTree = "<group>";
 		};
-		1FCE53E029EFBCDE00FB9213 /* Resources */ = {
+		1FD9827F29F0F67000CD83CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1FCE53E129EFBE3300FB9213 /* Media.xcassets */,
 			);
-			path = Resources;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FD9828529F104DA00CD83CF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1FD9828629F104F500CD83CF /* UIColor+Helper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,10 +282,12 @@
 				1FCE53A729EFAA4600FB9213 /* Sources */,
 				1FCE53A829EFAA4600FB9213 /* Frameworks */,
 				1FCE53A929EFAA4600FB9213 /* Resources */,
+				1FD9828429F0F67100CD83CF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1FD9828329F0F67100CD83CF /* PBXTargetDependency */,
 			);
 			name = CarouselApp;
 			productName = CarouselApp;
@@ -370,7 +404,6 @@
 			files = (
 				1FCE53BA29EFAA4700FB9213 /* LaunchScreen.storyboard in Resources */,
 				1FCE53B729EFAA4700FB9213 /* Assets.xcassets in Resources */,
-				1FCE53B529EFAA4600FB9213 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +430,7 @@
 			files = (
 				1FCE53DF29EFAFF100FB9213 /* CarouselCoordinator.swift in Sources */,
 				1FCE53DD29EFAE7300FB9213 /* CarouselVC.swift in Sources */,
+				1FD9828729F104F500CD83CF /* UIColor+Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,17 +487,14 @@
 			target = 1FCE53AA29EFAA4600FB9213 /* CarouselApp */;
 			targetProxy = 1FCE53CB29EFAA4700FB9213 /* PBXContainerItemProxy */;
 		};
+		1FD9828329F0F67100CD83CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FCE538E29EFA90000FB9213 /* Module-Carousel */;
+			targetProxy = 1FD9828229F0F67100CD83CF /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1FCE53B329EFAA4600FB9213 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FCE53B429EFAA4600FB9213 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1FCE53B829EFAA4700FB9213 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -700,7 +731,6 @@
 				INFOPLIST_FILE = CarouselApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -713,7 +743,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -729,7 +759,6 @@
 				INFOPLIST_FILE = CarouselApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -742,7 +771,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
